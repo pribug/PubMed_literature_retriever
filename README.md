@@ -112,7 +112,7 @@ Clone the repository:
 
 ```bash
 
-git clone <YOUR\_REPOSITORY\_URL>
+git clone <(https://github.com/pribug/PubMed_literature_retriever)>
 
 ```
 
@@ -124,7 +124,7 @@ Navigate into the project directory:
 
 ```bash
 
-cd pubmed-literature-retriever
+cd pubmed_literature_retriever
 
 ```
 
@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 
 
-Open `pubmed\_retriever.py` and replace:
+Open `pubmed_retriever.py` and replace:
 
 
 
@@ -246,13 +246,13 @@ For example:
 
 pmids, total\_results = search\_pubmed(
 
-&#x20;   query=query,
+   query=query,
 
-&#x20;   max\_results=10,
+   max\_results=10,
 
-&#x20;   start=0,
+   start=0,
 
-&#x20;   sort="date"
+   sort="date"
 
 )
 
@@ -322,13 +322,13 @@ For example:
 
 pmids, total\_results = search\_pubmed(
 
-&#x20;   query=query,
+   query=query,
 
-&#x20;   max\_results=3,
+   max\_results=3,
 
-&#x20;   start=6,
+   start=6,
 
-&#x20;   sort="date"
+   sort="date"
 
 )
 
@@ -392,13 +392,13 @@ Example:
 
 pmids, total\_results = search\_pubmed(
 
-&#x20;   query=query,
+   query=query,
 
-&#x20;   max\_results=5,
+   max\_results=5,
 
-&#x20;   start=0,
+   start=0,
 
-&#x20;   sort="date"
+   sort="date"
 
 )
 
@@ -442,25 +442,22 @@ A retrieved paper is stored as a Python dictionary:
 
 paper = {
 
-&#x20;   "pmid": pmid,
+   "pmid": pmid,
 
-&#x20;   "title": title,
+   "title": title,
 
-&#x20;   "abstract": abstract,
+   "abstract": abstract,
 
-&#x20;   "authors": authors,
+   "authors": authors,
 
-&#x20;   "journal": journal,
+   "journal": journal,
 
-&#x20;   "publication\_year": publication\_year,
+   "publication\_year": publication\_year,
 
-&#x20;   "doi": doi
+   "doi": doi
 
 }
 
-
-
-This structure makes the retrieved literature easier to process later.
 
 
 
@@ -552,6 +549,8 @@ To reproduce the results:
 
 8\. Run the Python script.
 
+9\. Open the generated `pubmed_results.csv` file to view the exported results.
+
 
 
 The main parameters that can be changed are:
@@ -584,13 +583,13 @@ query = "gold nanoparticles biosensor"
 
 pmids, total\_results = search\_pubmed(
 
-&#x20;   query=query,
+   query=query,
 
-&#x20;   max\_results=5,
+   max\_results=5,
 
-&#x20;   start=0,
+   start=0,
 
-&#x20;   sort="date"
+   sort="date"
 
 )
 
