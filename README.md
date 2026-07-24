@@ -48,23 +48,23 @@ A Python-based PubMed literature retrieval tool using the NCBI Entrez API, with 
 
 Search Query
 
-&#x20;    ↓
+    ↓
 
 PubMed / NCBI Entrez API
 
-&#x20;    ↓
+    ↓
 
 Retrieve PMIDs
 
-&#x20;    ↓
+    ↓
 
 Fetch Article Records
 
-&#x20;    ↓
+    ↓
 
 Extract Metadata
 
-&#x20;    ↓
+    ↓
 
 Display Results
 
